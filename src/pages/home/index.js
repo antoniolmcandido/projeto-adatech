@@ -1,10 +1,21 @@
 import React from "react";
-import "../../index.css";
+import "./styles.css";
+import heroes from "../../data";
+import Card from "../../components/card";
 
 function Home() {
     return (
         <div className="container">
-            <div className="card">
+            <div className="cards">
+                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+            </div>
+
+            <div className="form">
                 <form className="form-descript">
 
                     <label>

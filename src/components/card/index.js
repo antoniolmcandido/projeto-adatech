@@ -2,7 +2,7 @@ import React from "react";
 import Name from '../name'
 import './styles.css';
 import Image from "../image";
-import Description from "../Description";
+import Description from "../description";
 
 const Card = ({ name, src, description }) => {
     return (
