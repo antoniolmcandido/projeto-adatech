@@ -6,8 +6,13 @@ function Home() {
         <div className="container">
             <div className="card">
                 <form className="form-descript">
+
                     <label>
                         Nome: <input type="text" name="nome" required />
+                    </label>
+
+                    <label>
+                        Altura: <input type="text" name="altura" />
                     </label>
 
                     <label>
@@ -15,14 +20,29 @@ function Home() {
                     </label>
 
                     <label>
-                        Raça: <input type="text" name="raça" />
+                        Origem: <input type="text" name="origem" required />
                     </label>
 
-                    Tipo:
-                    <select name="type" required>
-                        <option value="Heroi">Herói</option>
-                        <option value="Vilao">Vilão</option>
-                    </select>
+                    <label>
+                        Raça: <input type="text" name="raça" />
+                    </label>
+                    <label>
+                        Tipo:
+                        <select name="type" required>
+                            <option value="Heroi">Herói</option>
+                            <option value="Vilao">Vilão</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Descrição: <textarea name="descricao" required />
+                    </label>
+
+                    <label>
+                        Imagem do Personagem: <input type="url" name="imagemPerso" required />
+                    </label>
+
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </div>

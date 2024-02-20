@@ -14,8 +14,27 @@ code {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   height: 100vh;
   background-color: rgb(128, 90, 128);
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

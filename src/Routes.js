@@ -5,6 +5,8 @@ import {
     Routes as RoutesDom,
 } from "react-router-dom";
 import HomePage from "./pages/home";
+
+// depois teremos essa rota
 // import DetailsPage from "./pages/details";
 
 const Routes = () => (
