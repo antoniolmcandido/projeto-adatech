@@ -2,13 +2,30 @@ import React from "react";
 import "./styles.css";
 import heroes from "../../data";
 import Card from "../../components/card";
+import { useState } from "react";
 
 function Home() {
+    // //armazenar os herois//
+    // const [heroes, setHeroes] = useState(heroesData);
+    // //armazenando novos herois//
+    // const [newHero, setNewHero] = useState({});
+
+    // //capturar formulario
+    // const handleSubmit = (e)=>{
+    //     e.preventDefault();
+    //     setHeroes(prevState)
+    // }
+
+
+
+
+
+
+    //
+
     return (
         <div className="container">
             <div className="cards">
-                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
-                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
                 <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
                 <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
                 <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />

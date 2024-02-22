@@ -7,8 +7,6 @@ const Image = (props) => {
         <img
             className="image"
             src={props.src}
-            width={props.width ?? "auto"}
-            height={props.heigth ?? "160px"}
         />
     );
 };

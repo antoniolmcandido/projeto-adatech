@@ -7,11 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.cards {
+/* .cards {
   display: flex;
   flex-wrap: wrap;
   width: 75%;
   margin-right: 20px;
+  justify-content: space-between;
+} */
+
+/* .cards {
+  width: 50%;
+  margin: 20px auto; 
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.cards{
+  width: calc(50% - 10px);
+  margin: 10px;
+  background-color: white;
+  
+} */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
@@ -26,11 +51,11 @@ code {
   justify-content: space-between;
   align-items: flex-start;
   height: 100vh;
-  background-color: rgb(128, 90, 128);
+  background-color: rgb(100, 120, 130);
 }
 
 .form {
-  width: 300px;
+  width: 260px;
   padding: 20px;
   margin-top: 20px;
   background-color: white;

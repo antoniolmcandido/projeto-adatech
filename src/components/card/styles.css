@@ -1,0 +1,35 @@
+/* .card {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  tenta atualziar a pagin*/
+
+
+.card {
+    width: calc(30% - 10px);
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    width: 75%;
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    padding: 10px;
+    color: #000;
+    line-height: 1.5;
+}
