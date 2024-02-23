@@ -1,24 +1,67 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100vh;
-    background-image: url('https://img.freepik.com/free-vector/flat-design-black-white-halftone-background_23-2150607369.jpg?w=1380&t=st=1708721714~exp=1708722314~hmac=4d510545e00accddfe25f0b51d374c1088b32fedf618005b808d749644532332'); /* Substitua pela URL da sua imagem */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgb(100, 120, 130);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.card-details {
+.card {
+    font-family: 'Poppins', sans-serif;
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-left: 4.5em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.67);
+
+}
+
+.card-image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid #522bee;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card-image img {
     width: 100%;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    color: #9176FF;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
 }

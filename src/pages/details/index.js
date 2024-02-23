@@ -9,16 +9,16 @@ function Details() {
 
   return (
     <div className="container">
-      <div className="card-details">
-        <h1>{hero.name}</h1>
-        <img src={hero.src} alt={hero.name}/>
+      <div className="card">
+        <h1 className={"card-title"}>{hero.name}</h1>
+        <img className={"card-image"} src={hero.src} alt={hero.name}/>
         <p>{hero.description}</p>
-        <h2>Detalhes:</h2>
-        <p>Altura: {hero.height}</p>
-        <p>Idade: {hero.age}</p>
-        <p>Origem: {hero.origin}</p>
-        <p>Raça: {hero.race}</p>
-        <p>Tipo: {hero.type}</p>
+        <p>Altura: {hero.height},
+          Idade: {hero.age},
+          Origem: {hero.origin},
+          Raça: {hero.race},
+          Tipo: {hero.type}</p>
+        <button className={"button"} onClick={() => window.history.back()}>Voltar</button>
       </div>
     </div>
   );
