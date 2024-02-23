@@ -1,80 +1,148 @@
 import React from "react";
 import "./styles.css";
-import heroes from "../../data";
 import Card from "../../components/card";
 import { useState } from "react";
+import Heroes from "../../data";
 
 function Home() {
-    // //armazenar os herois//
-    // const [heroes, setHeroes] = useState(heroesData);
-    // //armazenando novos herois//
-    // const [newHero, setNewHero] = useState({});
+    const [heroes, setHeroes] = useState(Heroes);
 
-    // //capturar formulario
-    // const handleSubmit = (e)=>{
-    //     e.preventDefault();
-    //     setHeroes(prevState)
-    // }
+    const [newHero, setNewHero] = useState({
+        name: "",
+        height: "",
+        age: "",
+        origin: "",
+        race: "",
+        type: "",
+        description: "",
+        src: "",
+    });
 
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+        setNewHero((prevState) => ({
+            ...prevState,
+            [name]: value,
+        }));
+    };
 
-
-
-
-
-    //
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setHeroes([...heroes, newHero]);
+        setNewHero({
+            name: "",
+            height: "",
+            age: "",
+            origin: "",
+            race: "",
+            type: "",
+            description: "",
+            src: "",
+        });
+    };
 
     return (
         <div className="container">
             <div className="cards">
-                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
-                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
-                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
-                <Card name={heroes[0].name} src={heroes[0].src} description={heroes[0].description} />
+                {heroes.map((hero) => (
+                    <Card name={hero.name} src={hero.src} description={hero.description} />
+                ))}
             </div>
 
-            <div className="form">
-                <form className="form-descript">
-
-                    <label>
-                        Nome: <input type="text" name="nome" required />
-                    </label>
-
-                    <label>
-                        Altura: <input type="text" name="altura" />
-                    </label>
-
-                    <label>
-                        Idade: <input type="text" name="idade" />
-                    </label>
-
-                    <label>
-                        Origem: <input type="text" name="origem" required />
-                    </label>
-
-                    <label>
-                        Raça: <input type="text" name="raça" />
-                    </label>
-                    <label>
-                        Tipo:
-                        <select name="type" required>
-                            <option value="Heroi">Herói</option>
-                            <option value="Vilao">Vilão</option>
-                        </select>
-                    </label>
-
-                    <label>
-                        Descrição: <textarea name="descricao" required />
-                    </label>
-
-                    <label>
-                        Imagem do Personagem: <input type="url" name="imagemPerso" required />
-                    </label>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+            <form onSubmit={handleSubmit} className="form">
+                <div>
+                    <label htmlFor="name">Nome:</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={newHero.name}
+                      onChange={handleInputChange}
+                      required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="height">Altura:</label>
+                    <input
+                      type="text"
+                      id="height"
+                      name="height"
+                      value={newHero.height}
+                      onChange={handleInputChange}
+                      required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="age">Idade:</label>
+                    <input
+                      type="text"
+                      id="age"
+                      name="age"
+                      value={newHero.age}
+                      onChange={handleInputChange}
+                      required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="origin">Origem:</label>
+                    <input
+                      type="text"
+                      id="origin"
+                      name="origin"
+                      value={newHero.origin}
+                      onChange={handleInputChange}
+                      required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="race">Raça:</label>
+                    <input
+                      type="text"
+                      id="race"
+                      name="race"
+                      value={newHero.race}
+                      onChange={handleInputChange}
+                      required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="type">Tipo:</label>
+                    <select
+                      id="type"
+                      name="type"
+                      value={newHero.type}
+                      onChange={handleInputChange}
+                      required
+                    >
+                        <option value="">Escolha um</option>
+                        <option value="Hero">Herói</option>
+                        <option value="Villain">Vilão</option>
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor="description">Descrição:</label>
+                    <textarea
+                      id="description"
+                      name="description"
+                      value={newHero.description}
+                      onChange={handleInputChange}
+                      required
+                    ></textarea>
+                </div>
+                <div>
+                    <label htmlFor="src">URL da Imagem:</label>
+                    <input
+                      type="url"
+                      id="src"
+                      name="src"
+                      value={newHero.src}
+                      onChange={handleInputChange}
+                    />
+                </div>
+                <button type="submit">Inserir</button>
+            </form>
         </div>
     )
-};
+}
 
 export default Home;
