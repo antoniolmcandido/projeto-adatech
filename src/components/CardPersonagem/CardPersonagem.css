@@ -1,0 +1,38 @@
+.card-personagem {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+  
+  .card-personagem h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .card-personagem img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card-personagem p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-personagem button {
+    padding: 5px 10px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .card-personagem button:hover {
+    background-color: #0056b3;
+  }
+  
