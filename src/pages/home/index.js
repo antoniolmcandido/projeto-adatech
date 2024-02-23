@@ -45,7 +45,7 @@ function Home() {
         <div className="container">
             <div className="cards">
                 {heroes.map((hero) => (
-                    <Card name={hero.name} src={hero.src} description={hero.description} />
+                    <Card name={hero.name} src={hero.src} description={hero.description} text={'Ver'} heroButton={hero.name}/>
                 ))}
             </div>
 

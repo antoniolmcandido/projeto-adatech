@@ -5,13 +5,13 @@ import Image from "../image";
 import Description from "../description";
 import Button from "../button";
 
-const Card = ({ name, src, description }) => {
+const Card = ({ name, src, description, text, heroButton }) => {
     return (
         <div className="card">
             <Image src={src} />
             <Name name={name} />
             <Description description={description} />
-            <Button />
+            <Button text={text} heroButton={heroButton}/>
         </div>
     );
 };

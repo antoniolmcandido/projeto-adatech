@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/flat-design-black-white-halftone-background_23-2150607369.jpg?w=1380&t=st=1708721714~exp=1708722314~hmac=4d510545e00accddfe25f0b51d374c1088b32fedf618005b808d749644532332'); /* Substitua pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(100, 120, 130);
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
