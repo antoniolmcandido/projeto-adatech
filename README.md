@@ -4,6 +4,8 @@ SÓ NAO ESQUEÇA DE FAZER UM NPM INSTALL E NPM START PRA TESTAR, VERIFIQUE SE ES
 
 REFIZ O README TAMBEM
 
+NÃO ENCONTREI O SEU WHATS KKKK
+
 ## Equipe:
 
 > [Antonio L M Candido](https://github.com/antoniolmcandido)
