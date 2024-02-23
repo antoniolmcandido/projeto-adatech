@@ -1,4 +1,4 @@
-## Equipe:
+## Da uma olhada na branch developer_raphael, por favor candido
 
 > [Antonio L M Candido](https://github.com/antoniolmcandido)
 
