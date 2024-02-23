@@ -5,7 +5,7 @@ import "./styles.css";
 const Image = (props) => {
     return (
         <img
-            className="image"
+            className="card-image"
             src={props.src}
         />
     );

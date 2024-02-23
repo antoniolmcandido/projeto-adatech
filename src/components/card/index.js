@@ -8,8 +8,8 @@ import Button from "../button";
 const Card = ({ name, src, description }) => {
     return (
         <div className="card">
-            <Name name={name} />
             <Image src={src} />
+            <Name name={name} />
             <Description description={description} />
             <Button />
         </div>

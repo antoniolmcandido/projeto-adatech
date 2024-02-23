@@ -6,7 +6,7 @@ import "./styles.css";
 // };
 
 const Button = ({ text }) => {
-    return <button className="button" type="submit">{text}</button>
+    return <button className="button" type="submit">Veja Mais</button>
 };
 
 export default Button;
