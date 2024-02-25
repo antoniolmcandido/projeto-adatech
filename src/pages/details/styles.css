@@ -28,28 +28,52 @@
 
 }
 
-.card-image {
+.card-image-hero {
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 5px solid #522bee;
+    border: 5px solid forestgreen;
     padding: 3px;
     margin-bottom: 2em;
 }
 
-.card-image img {
+.card-image-hero img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.card-title {
+.card-image-villain {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid darkred;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card-image-villain img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title-hero {
     font-size: 1.5rem;
     font-weight: 500;
     position: relative;
     top: .2em;
-    color: #9176FF;
+    color: forestgreen;
+}
+
+.card-title-villain {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    color: darkred;
 }
 
 .card-button {

@@ -28,16 +28,32 @@
 
 }
 
-.card-image {
+.card-image-hero {
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 5px solid #522bee;
+    border: 5px solid forestgreen;
     padding: 3px;
     margin-bottom: 2em;
 }
 
-.card-image img {
+.card-image-hero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-image-villain {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid darkred;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card-image-villain img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -60,6 +76,13 @@
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
 }
 
 .card-button:hover {

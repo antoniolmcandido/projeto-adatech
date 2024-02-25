@@ -5,15 +5,22 @@ import Image from "../image";
 import Description from "../description";
 import Button from "../button";
 
-const Card = ({ name, src, description, text, heroButton }) => {
-    return (
-        <div className="card">
-            <Image src={src} />
-            <Name name={name} />
-            <Description description={description} />
-            <Button text={text} heroButton={heroButton}/>
-        </div>
-    );
+const Card = ({name, src, description, heroButton, type}) => {
+  return (
+    <div className="card">
+      <Image
+        src={src}
+        className={`card-image-${type}`}
+      />
+      <Name name={name}/>
+      <Description description={description}/>
+
+      <div className="buttons">
+        <Button text={'Remover'} heroButton={heroButton} type={type}/>
+        <Button text={'Detalhes'} heroButton={heroButton} type={type}/>
+      </div>
+    </div>
+  );
 };
 
 export default Card; 

@@ -44,8 +44,14 @@ function Home() {
     <div className="container">
       <div className="cards">
         {heroes.map((hero) => (
-          <Card name={hero.name} src={hero.src} description={hero.description} text={'Detalhes'}
-                heroButton={hero.name}/>
+          <Card
+            name={hero.name}
+            src={hero.src}
+            description={hero.description}
+            text={'Detalhes'}
+            heroButton={hero.name}
+            type={hero.type}
+          />
         ))}
       </div>
 
@@ -115,8 +121,8 @@ function Home() {
             required
           >
             <option value="">Escolha um</option>
-            <option value="Hero">Herói</option>
-            <option value="Villain">Vilão</option>
+            <option value="hero">Herói</option>
+            <option value="villain">Vilão</option>
           </select>
         </div>
         <div>
